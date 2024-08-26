@@ -11,3 +11,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+}
+
+#txt_welcome {
+  text-align: center; 
+  margin-bottom: 50px;
+}
+
+#txt_welcome a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: blue;
+  text-decoration: none;
+}
+
+#txt_welcome a:hover {
+  text-decoration: underline;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  text-align: center;
+}
+
+.card_title {
+  font-size: 20px;
+  margin: 0.5rem 0;
+}
+
+.card_button {
+  font-size: 25px;
+  width: 150px;
+  height: 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card_button:hover {
+  background-color: #45a049;
+}
+
+.card_img {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+  }
+}
